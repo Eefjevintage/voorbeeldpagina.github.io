@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<metacharset="utf-8">
+<title>Tandartsafspraak</title>
+</head>
+<body>
+<h1>Tandartsafspraak</h1>
+<br>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vestibulum
+  risus ipsum, vel semper justo congue at. Mauris sodales enim ipsum,
+  eu efficitur ipsum finibus ac. Fusce et gravida sapien.
+  Cras malesuada odio vitae ex lacinia imperdiet. Proin feugiat scelerisque
+  bibendum. Duis iaculis ipsum et leo rhoncus blandit. Vivamus at pharetra velit,
+  nec accumsan turpis. Pellentesque semper eget leo id tempus. Quisque eget
+  lacus est.
+  Nullam pretium arcu in ultricies imperdiet. Donec luctus, mi at volutpat
+  mattis, nulla neque eleifend diam, sed euismod mi mi eget risus.
+  Nulla tempus massa non nisi dapibus tincidunt.</p><br><br>
+<img src="afbeeldingen/afspraak.jpeg" alt="afspraak" widht="300"><br>
+  <img src="afbeeldingen/mond.jpeg" alt="mond" widht="300"><br>
+<img src="afbeeldingen/praktijk.jpeg" alt="praktijk" widht="300"><br><br>
+<form id="contactform" action="https://formspree.io/f/xwkykrky" method="post">
+<fieldset>
+<legend>Persoonlijke gegevens</legend>
+<label for="naam">Naam</label>
+<input id="naam" type="text" name="naam"<br><br>
+<input type="radio" name="geslacht" value="man" checked>Man
+<input type="radio" name="geslacht" value="vrouw" checked>Vrouw
+<input type="radio" name="geslacht" value="anders" checked>Anders<br><br>
+<label for="adres">Adres</label>
+<input id="adres" type="text" name="adres"<br><br>
+<label for="postcode">Postcode</label>
+<input id="postcode" type="text" name="postcode"<br><br>
+<label for="woonplaats">Woonplaats</label>
+<input id="woonplaats" type="text" name="woonplaats"<br><br>
+<label for="telefoonnummer">Telefoonnummer</label>
+<input id="telefoonnummer" type="text" name="telefoonnummer"<br><br>
+<label for="emailadres">Emailadres</label>
+<input id="emailadres" type="text" name="emailadres"<br><br>
+<label for="leeftijd">Leeftijd</label>
+<td><input type="number" name="leeftijd" min="1" max="100"></td>
+</fieldset><br><br>
+<fieldset>
+<legend>Beschrijving van de klachten</legend>
+<b>Selecteer uw klacht</b>
+<select name="klacht">
+<option value="kies">Kiespijn</option>
+<option value="tandvlees">Tandvleesproblemen</option>
+<option value="tand">Afgebroken tand</option>
+<option value="anders">Anders</option>
+</select>
+</fieldset><br><br>
+<fieldset>
+<legend>Toelichting van de klachten</legend>
+<label for="fotobestand"><b>Selecteer een bestandsfoto</b></label>
+<input type="file" id="bestandsfoto" name="bestandsfoto"><br><br>
+<b>Schrijf uw toelichting</b><br>
+<td><textarea name="bericht" maxlength="1000">
+</textarea>
+</fieldset><br><br>
+<fieldset>
+<legend>Kies hier uw afspraakdatum</legend>
+<tr>
+<td><b>Kies datum</b></td>
+<td><input type="date" name="afspraakdatum"  min="2021-12-31" max=2022-01-31><br>
+<br>
+</fieldset><br>
+<input type="submit" value="Verzend">
+</form>
+</body>
+</html>
